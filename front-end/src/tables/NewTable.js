@@ -6,7 +6,7 @@ import { createTable } from "../utils/api";
 export default function NewTable({ loadDashboard }) {
   const history = useHistory();
 
-  const [error, setError] = useState([]);
+  const [error, setError] = useState(null);
   /** sets initial state of a table */
   const [formData, setFormData] = useState({
     table_name: "",
@@ -64,8 +64,7 @@ export default function NewTable({ loadDashboard }) {
       </h2>
       <div className="d-flex justify-content-center mt-4">
         <form className="font-weight-bold mt-2 w-75">
-          {/* <ErrorAlert error={error} /> */}
-
+          <ErrorAlert error={error} />
           <label htmlFor="table_name">Table Name&nbsp;</label>
           <input
             name="table_name"
