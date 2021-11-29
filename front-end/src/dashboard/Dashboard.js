@@ -63,6 +63,27 @@ function Dashboard({
     history.push(`/dashboard?date=${newDate}`);
   }
 
+  function displayDate(date) {
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+
+    const splitDate = date.split("-")
+
+    return `${months[splitDate[1] - 1]} ${splitDate[2]}, ${splitDate[0]}`
+  }
+
   return (
     <div
       className="w-80 ml-2 pr-4 mr-4 pt-4"
@@ -104,7 +125,7 @@ function Dashboard({
           </button>
         </div>
         <h4 className="mt-4 font-weight-bold d-flex justify-content-center mb-2">
-        {date}
+        {displayDate(date)}
         </h4>
 
         <h3 className="mb-4 font-weight-bold">Reservations</h3>
@@ -140,7 +161,7 @@ function Dashboard({
         <table className="table table-hover m-1 text-nowrap mb-4">
           <thead className="thead-dark">
             <tr className="text-center">
-              <th scope="col">Table ID</th>
+              <th scope="col">ID</th>
               <th scope="col">Table Name</th>
               <th scope="col">Capacity</th>
               <th scope="col">Status</th>
