@@ -1,19 +1,20 @@
-# Restaurant Reservation App
+# Periodic Tables
 
 ## Description
 Bootcamp capstone: an enterprise application for restaurants, allowing users to create, update, view, delete reservations, as well as seat them at various tables within the restaurant. Showcases outside-in development using the PERN technology stack (Postgres, Express, React, Node).
 
 ## Technologies & Tools
-- [ ] React
-  - [ ] React hooks
-  - [ ] React router
-- [ ] Node
-- [ ] Postgres
-- [ ] Express
-- [ ] CSS
-- [ ] Bootstrap4
-- [ ] HTML
 - [ ] JavaScript
+  - [ ] React.js
+    - [ ] React hooks
+    - [ ] React router
+  - [ ] Node.js
+  - [ ] Express.js
+  - [ ] Knex.js
+- [ ] Postgres
+- [ ] CSS
+  - [ ] Bootstrap4
+- [ ] HTML
 - [ ] RESTful APIs
 
 ## Run Locally
